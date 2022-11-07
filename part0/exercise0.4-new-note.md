@@ -11,6 +11,7 @@ sequenceDiagram
     Server-->>Browser: main.css
     Browser->>Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
     Server-->>Browser: main.js
+    Note over Browser: Starts executing main.js that requests the data from the server
     Browser->>Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
     Note over Server: Returns updated notes
     Server-->>Browser: data.json
